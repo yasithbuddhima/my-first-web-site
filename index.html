@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>남윤서의 노트</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 3px solid gray;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      ol {
+        border-right: 3px solid gray;
+        width: 180px;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #grid ol {
+        padding-left: 33px;
+      }
+      #article {
+        padding-left: 50px;
+        padding-top: 5px;
+      }
+      @media (max-width: 800px) {
+        #grid {
+          display: block;
+        }
+        ol {
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html" style="color: rgb(45, 38, 231)">Main</a></h1>
+    <div id="grid">
+      <ol>
+        <li>
+          <a href="1.diary.html">일기</a>
+        </li>
+        <br />
+        <li>
+          <a href="2.studysite.html">공부사이트</a>
+        </li>
+        <br />
+        <li><a href="3.bootcampsite.html">부트캠프 사이트 (미완성)</a></li>
+        <br />
+        <li><a href="4.whattobuy.html">사고싶은것</a></li>
+        <br />
+      </ol>
+      <div id="article">
+        <p>
+          안녕하세요. 저는 <strong>남윤서</strong> 입니다. <br />
+          이 사이트는 제가 가장 먼저 만든 웹사이트 입니다. <br />
+        </p>
+
+        <p>
+          <!--Start of Tawk.to Script-->
+          <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+              Tawk_LoadStart = new Date();
+            (function () {
+              var s1 = document.createElement('script'),
+                s0 = document.getElementsByTagName('script')[0];
+              s1.async = true;
+              s1.src =
+                'https://embed.tawk.to/667839db9d7f358570d282ec/1i12q40vs';
+              s1.charset = 'UTF-8';
+              s1.setAttribute('crossorigin', '*');
+              s0.parentNode.insertBefore(s1, s0);
+            })();
+          </script>
+          <!--End of Tawk.to Script-->
+        </p>
+        <img src="cat.jpg" alt="Cat-RaRa" width="200" />
+      </div>
+    </div>
+  </body>
+</html>

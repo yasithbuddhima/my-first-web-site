@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootcampsite.com</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 3px solid gray;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      ol {
+        border-right: 3px solid gray;
+        width: 180px;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #grid ol {
+        padding-left: 33px;
+      }
+      #article {
+        padding-left: 50px;
+        padding-top: 5px;
+      }
+      @media (max-width: 800px) {
+        #grid {
+          display: block;
+        }
+        ol {
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">Main</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.diary.html">일기</a></li>
+        <br />
+        <li><a href="2.studysite.html">공부사이트</a></li>
+        <br />
+        <li><a href="3.bootcampsite.html">부트캠프 사이트 (미완성)</a></li>
+        <br />
+        <li><a href="4.whattobuy.html">사고싶은것</a></li>
+        <br />
+      </ol>
+      <div id="article">
+        <h2>JavaScript</h2>
+        <p>
+          자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍
+          언어이다. 이 언어는 웹 브라우저 내에서 주로 사용되며, 다른 응용
+          프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한
+          Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
