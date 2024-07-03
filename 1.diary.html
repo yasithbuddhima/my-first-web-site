@@ -4,85 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mydiary.com</title>
-    <style>
-      body {
-        margin: 0;
-      }
-      a {
-        color: black;
-        text-decoration: none;
-      }
-
-      h1 {
-        font-size: 45px;
-        text-align: center;
-        border-bottom: 3px solid gray;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 10px;
-      }
-      ol {
-        border-right: 3px solid gray;
-        width: 180px;
-        margin: 0;
-        padding: 20px;
-      }
-      #grid {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-      }
-      #grid ol {
-        padding-left: 33px;
-      }
-      #article {
-        padding-left: 50px;
-        padding-top: 5px;
-      }
-      @media (max-width: 800px) {
-        #grid {
-          display: block;
-        }
-        ol {
-          border-right: none;
-        }
-        h1 {
-          border-bottom: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
-    <h1><a href="index.html" style="color: rgb(45, 38, 231)">Main</a></h1>
-    <div id="grid">
-      <ol>
-        <li>
-          <a href="1.diary.html">일기</a>
-        </li>
-        <br />
-        <li><a href="2.studysite.html">공부사이트</a></li>
-        <br />
-        <li><a href="3.bootcampsite.html">부트캠프 사이트 (미완성)</a></li>
-        <br />
-        <li><a href="4.whattobuy.html">사고싶은것</a></li>
-        <br />
-      </ol>
-      <div id="article">
-        <br />
 
-        <h2>한줄 일기장</h2>
-
-        <p>
-          ---------------------------------------------------------------------------------<br />
-          6/22 <br />
-          오늘 스크린골프를 쳤다. 경산cc +33점. 점수가 진짜 많이 올라서 기쁘다.
-          <br />
-          한편으로는 이주은이 보고싶다. 계속 귀에서 주은이 목소리로 "~~띠모"
-          하는게 맴돈다...<br />
-          끝<br />
-          ---------------------------------------------------------------------------------
-        </p>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="index.html">남윤서</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Main <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1.diary.html">일기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2.studysite.html">공부사이트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="3.bootcampsite.html">부트캠프 사이트 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="4.whattobuy.html">사고싶은것</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+    
+
+    <div class="container1">
+      <div class="item1">
+        <h2>한줄 일기장</h2>
+      </div>
+        
+      <div class="item1" style="background-color: #F7EEDD">
+        
+        <span style="font-weight: bolder;">6/22</span>
+        <br><br>
+          오늘 스크린골프를 쳤다. 경산cc +33점. 점수가 진짜 많이 올라서 기쁘다.
+        <br>
+        한편으로는 이주은이 보고싶다. 계속 귀에서 주은이 목소리로 "~~띠모"
+        하는게 맴돈다...<br /><br>
+        <span style="font-weight: bold;">끝</span>
+        
+
+      </div>
+        
+          
+        
   </body>
 </html>
