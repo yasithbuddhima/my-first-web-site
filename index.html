@@ -4,76 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>남윤서의 노트</title>
-    <style>
-      body {
-        margin: 0;
-      }
-      a {
-        color: black;
-        text-decoration: none;
-      }
-
-      h1 {
-        font-size: 45px;
-        text-align: center;
-        border-bottom: 3px solid gray;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 10px;
-      }
-      ol {
-        border-right: 3px solid gray;
-        width: 180px;
-        margin: 0;
-        padding: 20px;
-      }
-      #grid {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-      }
-      #grid ol {
-        padding-left: 33px;
-      }
-      #article {
-        padding-left: 50px;
-        padding-top: 5px;
-      }
-      @media (max-width: 800px) {
-        #grid {
-          display: block;
-        }
-        ol {
-          border-right: none;
-        }
-        h1 {
-          border-bottom: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
-    <h1><a href="index.html" style="color: rgb(45, 38, 231)">Main</a></h1>
-    <div id="grid">
-      <ol>
-        <li>
-          <a href="1.diary.html">일기</a>
-        </li>
-        <br />
-        <li>
-          <a href="2.studysite.html">공부사이트</a>
-        </li>
-        <br />
-        <li><a href="3.bootcampsite.html">부트캠프 사이트 (미완성)</a></li>
-        <br />
-        <li><a href="4.whattobuy.html">사고싶은것</a></li>
-        <br />
-      </ol>
-      <div id="article">
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="index.html">남윤서</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Main <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="1.diary.html">일기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2.studysite.html">공부사이트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="3.bootcampsite.html">부트캠프 사이트 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="4.whattobuy.html">사고싶은것</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="index-container">
+      <div class="index-item">
         <p>
           안녕하세요. 저는 <strong>남윤서</strong> 입니다. <br />
           이 사이트는 제가 가장 먼저 만든 웹사이트 입니다. <br />
         </p>
+      </div>
+      <div class="grid-item">
+        <img src="cat.jpg" alt="Cat-RaRa" width="200" />
+      </div>
+
+    </div>
+
 
         <p>
           <!--Start of Tawk.to Script-->
@@ -93,8 +68,7 @@
           </script>
           <!--End of Tawk.to Script-->
         </p>
-        <img src="cat.jpg" alt="Cat-RaRa" width="200" />
-      </div>
-    </div>
+        
+      
   </body>
 </html>
